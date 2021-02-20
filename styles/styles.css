@@ -1,0 +1,441 @@
+@font-face {
+  font-family: "Lato-Light";
+  src: url(../fonts/Lato-Black.eot), url(../fonts/Lato-Light.ttf), url(../fonts/Lato-Light.woff), url(../fonts/Lato-Light.svg);
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../fonts/Lato-Regular.eot), url(../fonts/Lato-Regular.ttf), url(../fonts/Lato-Regular.woff), url(../fonts/Lato-Regular.svg);
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(../fonts/Lato-Bold.eot), url(../fonts/Lato-Bold.ttf), url(../fonts/Lato-Bold.woff), url(../fonts/Lato-Bold.svg);
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url(../fonts/Lato-Black.eot), url(../fonts/Lato-Black.ttf), url(../fonts/Lato-Black.woff), url(../fonts/Lato-Black.svg);
+}
+
+html, body {
+  margin: 0;
+  width: 1920px;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  padding: 38px 115px 38px 115px;
+  background: #131313;
+  width: 1690px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav {
+  width: 647px;
+}
+
+.header__logo {
+  text-decoration: none;
+  margin-right: 818px;
+}
+
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__langs {
+  font: 20px "Lato-Bold";
+  color: #3ba6ff;
+  border: 1px #3ba6ff solid;
+  border-radius: 15px;
+  padding: 2px 17px 4px 17px;
+  margin: 0 0 0 11px;
+}
+
+.nav {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 36px;
+}
+
+.nav:last-child {
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #babcbc;
+  font: 20px "Lato-Bold";
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  background: #3ba6ff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover::after {
+  color: #3ba6ff;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.middle {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.main-slider {
+  background: #191919;
+}
+
+.main-slider__item {
+  padding-bottom: 54.5%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 10px;
+}
+
+.main-slider__title {
+  position: absolute;
+  font: 80px "Lato-Regular";
+  color: #fff;
+  top: 21.9%;
+  left: 18.7%;
+  text-transform: uppercase;
+  letter-spacing: 4.0px;
+}
+
+.main-slider__text {
+  position: absolute;
+  font: 36px "Lato-Regular";
+  color: #b3b3b3;
+  top: 32.8%;
+  left: 19%;
+  letter-spacing: 3.2px;
+}
+
+.main-slider__dots {
+  position: absolute;
+  bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: -35px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.main-slider__big-dot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: #fff;
+  margin-right: 27px;
+}
+
+.main-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background-color: #8c8c8c;
+  margin-right: 28px;
+}
+
+.main-slider__dot:last-child {
+  margin: 0;
+}
+
+.main-works {
+  background: #1f1f1f;
+  height: 1025px;
+  position: relative;
+}
+
+.main-works__content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-works__text {
+  display: block;
+  margin: 78px 0 0 0;
+  letter-spacing: 0.5px;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+.main-works__text .text-title {
+  font: 40px "Lato-Regular";
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.main-works__text .content {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 1050px;
+  height: auto;
+  font: 30px/50px "Lato-Regular";
+}
+
+.main-works__examples {
+  display: block;
+  margin-top: 145px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-works__works-title {
+  font: 40px/46px "Lato-Regular";
+  color: #686868;
+}
+
+.main-works__link {
+  font: 30px/50px "Lato-Light";
+  color: #999999;
+  text-decoration: none;
+  display: block;
+  width: 109px;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-works__link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  background: #999999;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-works__link:hover::after {
+  color: #aaaaaa;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-works__pictures {
+  border: 6px solid #414141;
+  border-right: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 72px 0 0 0;
+}
+
+.main-works .project-link {
+  text-decoration: none;
+}
+
+.main-works .project-link:hover {
+  opacity: 0.4;
+}
+
+.main-works img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 1920px;
+  height: 440px;
+  background-color: #171717;
+}
+
+.footer__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 74px 262px 0 259px;
+}
+
+.footer__left-block {
+  margin-top: 33px;
+}
+
+.mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.send-mail {
+  padding: 2px 0 0 2px;
+}
+
+.mail-link, .phone-link, .geo-link {
+  font: 14px/24px "Lato-Black";
+  color: #858585;
+  text-decoration: none;
+}
+
+.mail-link {
+  padding: 2px 0 0 13px;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 45px;
+  margin: 59px 0 0 8px;
+  font: 14px/24px "Lato-Regular";
+}
+
+.phone-info {
+  padding-right: 20px;
+}
+
+.geo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 45px;
+  margin: 54px 0 0 8px;
+}
+
+.geo-link {
+  padding: 6px 0 0 18px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.social__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__text {
+  margin-right: 22px;
+  font: 14px "Lato-Black";
+  color: #858585;
+}
+
+.social__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: 14px "Lato-Black";
+  color: #858585;
+  width: 120px;
+  height: 111px;
+  margin: 25px 0 0 170px;
+}
+
+.social__links .fb, .social__links .tw, .social__links .rss {
+  margin-right: 16px;
+}
+
+.social__copyright {
+  font: 14px/16px "Lato-Light";
+  color: #888888;
+  text-align: right;
+  margin-top: 33px;
+  letter-spacing: 0.2px;
+}
+/*# sourceMappingURL=styles.css.map */

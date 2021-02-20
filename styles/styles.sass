@@ -1,0 +1,287 @@
+@font-face 
+  font-family: "Lato-Light"
+  src: url(../fonts/Lato-Black.eot), url(../fonts/Lato-Light.ttf), url(../fonts/Lato-Light.woff), url(../fonts/Lato-Light.svg)
+
+@font-face 
+  font-family: "Lato-Regular"
+  src: url(../fonts/Lato-Regular.eot), 
+  url(../fonts/Lato-Regular.ttf), 
+  url(../fonts/Lato-Regular.woff), 
+  url(../fonts/Lato-Regular.svg)
+
+@font-face 
+  font-family: "Lato-Bold"
+  src: url(../fonts/Lato-Bold.eot), 
+  url(../fonts/Lato-Bold.ttf), 
+  url(../fonts/Lato-Bold.woff), 
+  url(../fonts/Lato-Bold.svg)
+
+@font-face 
+  font-family: "Lato-Black"
+  src: url(../fonts/Lato-Black.eot), 
+  url(../fonts/Lato-Black.ttf), 
+  url(../fonts/Lato-Black.woff), 
+  url(../fonts/Lato-Black.svg)
+
+$l: "Lato-Light"
+$r: "Lato-Regular"
+$b: "Lato-Bold"
+$bl: "Lato-Black"
+
+html, body
+    margin: 0
+    width: 1920px
+    height: 100%    
+
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+
+.header 
+    padding: 38px 115px 38px 115px
+    background: #131313
+    width: 1690px
+    display: flex
+    justify-content: space-between
+    &__nav
+      width: 647px
+    &__logo
+        text-decoration: none
+        margin-right: 818px
+    &__actions
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__langs
+        font: 20px $b
+        color: #3ba6ff
+        border: 1px #3ba6ff solid
+        border-radius: 15px
+        padding: 2px 17px 4px 17px
+        margin: 0 0 0 11px
+
+.nav
+    padding: 0
+    display: flex
+    &__item
+        list-style: none
+        margin-right: 36px
+    &:last-child
+          margin: 0  
+    &__link
+        text-decoration: none
+        text-transform: uppercase
+        color: #babcbc
+        font: 20px $b
+        position: relative
+    &__link::after       
+        content: ''
+        display: block
+        height: 2px
+        width: 100%
+        position: absolute
+        bottom: -6px
+        left: 0
+        background: #3ba6ff
+        opacity: 0
+        transition: all 0.3s ease
+    &__link:hover::after 
+        color: #3ba6ff
+        opacity: 1 
+        transition: all 0.3s ease
+.middle
+    flex: 1   
+
+.main-slider
+  background: #191919
+  &__item
+    padding-bottom: 54.5%
+    position: relative
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    margin-bottom: 10px
+  &__title
+    position: absolute  
+    font: 80px $r
+    color: #fff
+    top: 21.9%
+    left: 18.7%
+    text-transform: uppercase
+    letter-spacing: 4.0px
+  &__text
+    position: absolute
+    font: 36px $r
+    color: #b3b3b3
+    top: 32.8%
+    left: 19%
+    letter-spacing: 3.2px
+  &__dots
+    position: absolute
+    bottom: 32px
+    display: flex
+    justify-content: center
+    left: -35px
+    width: 100%
+    align-items: center
+    list-style-type: none
+  &__big-dot
+    display: block
+    width: 15px
+    height: 15px
+    border-radius: 50px
+    background-color: #fff 
+    margin-right: 27px
+  &__dot
+    width: 10px
+    height: 10px
+    border-radius: 30px
+    background-color: #8c8c8c
+    margin-right: 28px
+    &:last-child
+      margin: 0
+
+.main-works
+  &__content-block
+    display: flex
+    flex-direction: column
+  background: #1f1f1f
+  height: 1025px
+  position: relative
+  &__text
+    display: block
+    margin: 78px 0 0 0
+    letter-spacing: 0.5px
+    color: #999999
+    text-transform: uppercase
+    .text-title
+      font: 40px $r
+      line-height: 50px
+      text-align: center
+      margin-bottom: 3px
+    .content
+      display: block
+      margin: 0 auto
+      text-align: center
+      width: 1050px
+      height: auto
+      font: 30px/50px $r
+
+  &__examples 
+    display: block
+    margin-top: 145px
+    text-align: center  
+    text-transform: uppercase
+  &__works-title
+        font: 40px/46px $r
+        color: #686868
+  &__link
+        font: 30px/50px $l
+        color: #999999
+        text-decoration: none
+        display: block 
+        width: 109px
+        height: 40px
+        margin: 0 auto
+        position: relative
+  &__link::after       
+        content: ''
+        display: block
+        height: 2px
+        width: 100%
+        position: absolute
+        bottom: -9px
+        left: 0
+        background: #999999
+        opacity: 0
+        transition: all 0.3s ease
+  &__link:hover::after 
+        color: #aaaaaa
+        opacity: 1 
+        transition: all 0.3s ease
+  &__pictures
+    border: 6px solid #414141
+    border-right: none
+    display: flex
+    box-sizing: border-box 
+    margin: 72px 0 0 0
+  .project-link
+    text-decoration: none
+  .project-link:hover
+    opacity: 0.4  
+  img
+    display: flex
+    width: 100%
+    height: auto
+.footer
+  width: 1920px
+  height: 440px
+  background-color:#171717
+  &__blocks
+    display: flex
+    justify-content: space-between
+    margin: 74px 262px 0 259px
+  &__left-block
+    margin-top: 33px 
+.mail  
+  display: flex
+  align-items: center
+.send-mail
+  padding: 2px 0 0 2px 
+  
+.mail-link, .phone-link, .geo-link
+  font: 14px/24px $bl
+  color: #858585
+  text-decoration: none
+.mail-link
+  padding: 2px 0 0 13px
+.phone
+  display: flex
+  align-items: center
+  width: 400px
+  height: 45px
+  margin: 59px 0 0 8px
+  font: 14px/24px $r
+.phone-info   
+  padding-right: 20px
+.geo
+  display: flex
+  align-items: center
+  width: 400px
+  height: 45px
+  margin: 54px 0 0 8px
+.geo-link
+ padding: 6px 0 0 18px  
+.social
+  display: flex  
+  flex-direction: column
+  &__block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    margin-right: 22px 
+    font: 14px $bl 
+    color:#858585
+  &__links
+    display: flex
+    justify-content: space-between
+    font: 14px $bl 
+    color:#858585
+    
+    .fb, .tw, .rss
+      margin-right: 16px
+    width: 120px
+    height: 111px
+    margin: 25px 0 0 170px
+  &__copyright
+    font: 14px/16px $l
+    color:#888888
+    text-align: right
+    margin-top: 33px
+    letter-spacing: 0.2px
+    
+    
+
+    
